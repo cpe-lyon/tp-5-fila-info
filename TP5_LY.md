@@ -3,13 +3,13 @@
 1. **Addition de douveau disque dure de 5Go**
 ![image](https://user-images.githubusercontent.com/97104312/194231304-741b6053-82e7-4100-8b0c-4c75a94f8f5e.png)
 
-2. On vérifie que le nouveau disque dure est bien détectée avec la commande `lsblk` 
+2. On vérifie que le nouveau disque dure est bien détectée avec la commande `lsblk`  
  ![image](https://user-images.githubusercontent.com/97104312/194232212-786da282-f466-40d3-9a66-eb12db97656c.png)
 
 
 3. Partitionnez ce disque en utilisant fdisk : créez une première partition de 2 Go de type Linux (n°83), et une seconde partition de 3 Go en NTFS (n°7)
 
-`sudo fdisk /dev/sdb`
+`sudo fdisk /dev/sdb`  
 
 ![image](https://user-images.githubusercontent.com/97104312/194274782-86b56651-0cc2-43ba-a59f-6693fcb8d34b.png)
 
