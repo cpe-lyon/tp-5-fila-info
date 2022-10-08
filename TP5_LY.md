@@ -43,4 +43,16 @@ $ sudo mount -a
 1. 
 `sudo umount /data`  
 `sudo umount /win`  
-`sudo nano /etc/fstab`  
+`sudo nano /etc/fstab`   
+
+2.On utilise la même méthose et on lui donne le type 8.  
+
+3.On utilise la commande `sudo pvcreate /dev/sdb1 ` `sudo pvdisplay`  
+
+4.On utilise la commande `vgcreate ` et `vgdisplay`  
+
+5.Il faut utiliser la commande: `sudo lvcreate -n lvData -l 100%FREE vg1`
+
+8.Utilisez la commande vgextend <nom_vg> <nom_pv> pour ajouter le nouveau disque au groupe de volumes.  
+
+9.Utilisez la commande `lvresize`pour agrandir le volume logique. Enfin, on redimentionne avec: `resize2fs`.
